@@ -3,448 +3,27 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+  <meta name="description" content="Clinton Joash - IT Technical Support Specialist in Nairobi, Kenya. Service Desk, Systems Support, Networking, ITSM Documentation, and Python Flask projects." />
   <title>Clinton Joash | IT Technical Support Specialist</title>
-
-  <meta name="description" content="Clinton Joash is an IT Technical Support Specialist based in Nairobi, Kenya, focused on service desk support, networking, systems support, ITSM documentation, and Python Flask projects." />
-
-  <style>
-    :root {
-      --primary: #0f172a;
-      --secondary: #1e293b;
-      --accent: #2563eb;
-      --accent-dark: #1d4ed8;
-      --text: #1f2937;
-      --muted: #64748b;
-      --light: #f8fafc;
-      --border: #e2e8f0;
-      --white: #ffffff;
-      --success: #16a34a;
-    }
-
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      background: var(--light);
-      color: var(--text);
-      line-height: 1.7;
-    }
-
-    a {
-      color: var(--accent);
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    .container {
-      width: min(1120px, 92%);
-      margin: auto;
-    }
-
-    .topbar {
-      background: var(--primary);
-      color: var(--white);
-      padding: 14px 0;
-      font-size: 14px;
-    }
-
-    .topbar-content {
-      display: flex;
-      justify-content: space-between;
-      gap: 16px;
-      flex-wrap: wrap;
-    }
-
-    .navbar {
-      background: var(--white);
-      border-bottom: 1px solid var(--border);
-      position: sticky;
-      top: 0;
-      z-index: 50;
-    }
-
-    .nav-content {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 16px 0;
-      gap: 20px;
-    }
-
-    .brand {
-      font-size: 20px;
-      font-weight: 800;
-      color: var(--primary);
-    }
-
-    .nav-links {
-      display: flex;
-      gap: 22px;
-      flex-wrap: wrap;
-      font-size: 15px;
-      font-weight: 600;
-    }
-
-    .nav-links a {
-      color: var(--secondary);
-    }
-
-    .hero {
-      background:
-        linear-gradient(120deg, rgba(15, 23, 42, 0.96), rgba(30, 41, 59, 0.94)),
-        radial-gradient(circle at top right, rgba(37, 99, 235, 0.35), transparent 35%);
-      color: var(--white);
-      padding: 90px 0;
-    }
-
-    .hero-grid {
-      display: grid;
-      grid-template-columns: 1.4fr 0.9fr;
-      gap: 50px;
-      align-items: center;
-    }
-
-    .eyebrow {
-      color: #bfdbfe;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      font-size: 13px;
-      font-weight: 700;
-      margin-bottom: 16px;
-    }
-
-    .hero h1 {
-      font-size: clamp(36px, 6vw, 64px);
-      line-height: 1.1;
-      margin-bottom: 18px;
-    }
-
-    .hero h2 {
-      font-size: clamp(20px, 3vw, 28px);
-      color: #dbeafe;
-      font-weight: 600;
-      margin-bottom: 22px;
-    }
-
-    .hero p {
-      font-size: 18px;
-      color: #e2e8f0;
-      max-width: 720px;
-      margin-bottom: 30px;
-    }
-
-    .hero-actions {
-      display: flex;
-      gap: 14px;
-      flex-wrap: wrap;
-      margin-bottom: 30px;
-    }
-
-    .btn {
-      display: inline-block;
-      padding: 13px 20px;
-      border-radius: 10px;
-      font-weight: 700;
-      transition: 0.2s ease;
-      border: 1px solid transparent;
-    }
-
-    .btn-primary {
-      background: var(--accent);
-      color: var(--white);
-    }
-
-    .btn-primary:hover {
-      background: var(--accent-dark);
-      text-decoration: none;
-    }
-
-    .btn-outline {
-      border-color: #93c5fd;
-      color: var(--white);
-    }
-
-    .btn-outline:hover {
-      background: rgba(255, 255, 255, 0.1);
-      text-decoration: none;
-    }
-
-    .hero-card {
-      background: rgba(255, 255, 255, 0.08);
-      border: 1px solid rgba(255, 255, 255, 0.15);
-      backdrop-filter: blur(10px);
-      border-radius: 22px;
-      padding: 30px;
-      box-shadow: 0 30px 80px rgba(0, 0, 0, 0.25);
-    }
-
-    .hero-card h3 {
-      margin-bottom: 18px;
-      font-size: 22px;
-    }
-
-    .hero-card ul {
-      list-style: none;
-    }
-
-    .hero-card li {
-      padding: 10px 0;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.12);
-      color: #e2e8f0;
-    }
-
-    .hero-card li:last-child {
-      border-bottom: none;
-    }
-
-    .badges {
-      display: flex;
-      gap: 10px;
-      flex-wrap: wrap;
-    }
-
-    .badge {
-      background: rgba(255, 255, 255, 0.1);
-      border: 1px solid rgba(255, 255, 255, 0.18);
-      color: #e2e8f0;
-      padding: 7px 12px;
-      border-radius: 999px;
-      font-size: 13px;
-      font-weight: 700;
-    }
-
-    section {
-      padding: 74px 0;
-    }
-
-    .section-title {
-      max-width: 760px;
-      margin-bottom: 36px;
-    }
-
-    .section-title span {
-      color: var(--accent);
-      font-weight: 800;
-      text-transform: uppercase;
-      letter-spacing: 1.5px;
-      font-size: 13px;
-    }
-
-    .section-title h2 {
-      font-size: clamp(28px, 4vw, 42px);
-      color: var(--primary);
-      margin: 8px 0 12px;
-      line-height: 1.2;
-    }
-
-    .section-title p {
-      color: var(--muted);
-      font-size: 17px;
-    }
-
-    .grid-3 {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 22px;
-    }
-
-    .grid-2 {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 22px;
-    }
-
-    .card {
-      background: var(--white);
-      border: 1px solid var(--border);
-      border-radius: 18px;
-      padding: 26px;
-      box-shadow: 0 18px 45px rgba(15, 23, 42, 0.06);
-    }
-
-    .card h3 {
-      color: var(--primary);
-      font-size: 21px;
-      margin-bottom: 12px;
-    }
-
-    .card p {
-      color: var(--muted);
-    }
-
-    .skills-list {
-      display: flex;
-      gap: 10px;
-      flex-wrap: wrap;
-      margin-top: 16px;
-    }
-
-    .skill {
-      background: #eff6ff;
-      color: #1e40af;
-      border: 1px solid #dbeafe;
-      padding: 7px 11px;
-      border-radius: 999px;
-      font-size: 13px;
-      font-weight: 700;
-    }
-
-    .experience-item {
-      border-left: 4px solid var(--accent);
-      padding-left: 22px;
-      margin-bottom: 30px;
-      background: var(--white);
-      border-radius: 0 16px 16px 0;
-      padding-top: 20px;
-      padding-bottom: 20px;
-      padding-right: 22px;
-      box-shadow: 0 18px 45px rgba(15, 23, 42, 0.05);
-    }
-
-    .experience-item h3 {
-      color: var(--primary);
-      font-size: 22px;
-    }
-
-    .role-meta {
-      color: var(--accent);
-      font-weight: 800;
-      margin-bottom: 10px;
-    }
-
-    .experience-item ul {
-      margin-left: 20px;
-      color: var(--muted);
-    }
-
-    .project-card {
-      background: var(--white);
-      border: 1px solid var(--border);
-      border-radius: 20px;
-      overflow: hidden;
-      box-shadow: 0 18px 45px rgba(15, 23, 42, 0.06);
-    }
-
-    .project-header {
-      background: var(--primary);
-      color: var(--white);
-      padding: 22px;
-    }
-
-    .project-header h3 {
-      font-size: 22px;
-      margin-bottom: 6px;
-    }
-
-    .project-body {
-      padding: 24px;
-    }
-
-    .project-body p {
-      color: var(--muted);
-      margin-bottom: 14px;
-    }
-
-    .contact-box {
-      background: linear-gradient(120deg, var(--primary), var(--secondary));
-      color: var(--white);
-      border-radius: 24px;
-      padding: 38px;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 26px;
-      align-items: center;
-    }
-
-    .contact-box h2 {
-      font-size: clamp(28px, 4vw, 42px);
-      line-height: 1.2;
-      margin-bottom: 14px;
-    }
-
-    .contact-box p {
-      color: #e2e8f0;
-    }
-
-    .contact-links {
-      background: rgba(255, 255, 255, 0.08);
-      border: 1px solid rgba(255, 255, 255, 0.12);
-      border-radius: 18px;
-      padding: 24px;
-    }
-
-    .contact-links p {
-      margin-bottom: 12px;
-      word-break: break-word;
-    }
-
-    .contact-links a {
-      color: #bfdbfe;
-      font-weight: 700;
-    }
-
-    footer {
-      background: var(--primary);
-      color: #cbd5e1;
-      text-align: center;
-      padding: 26px 0;
-      font-size: 14px;
-    }
-
-    @media (max-width: 860px) {
-      .hero-grid,
-      .grid-2,
-      .grid-3,
-      .contact-box {
-        grid-template-columns: 1fr;
-      }
-
-      .nav-content {
-        align-items: flex-start;
-        flex-direction: column;
-      }
-
-      .hero {
-        padding: 70px 0;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="assets/styles.css" />
 </head>
-
 <body>
-
   <div class="topbar">
-    <div class="container topbar-content">
-      <div>Nairobi, Kenya</div>
-      <div>
-        <a href="mailto:clionyi08@gmail.com" style="color:#bfdbfe;">clionyi08@gmail.com</a>
-        &nbsp; | &nbsp;
-        <a href="tel:+254704450646" style="color:#bfdbfe;">+254 704 450 646</a>
-      </div>
+    <div class="container">
+      <span>Nairobi, Kenya</span>
+      <span><a href="mailto:clionyi08@gmail.com">clionyi08@gmail.com</a> | <a href="tel:+254704450646">+254 704 450 646</a></span>
     </div>
   </div>
 
   <nav class="navbar">
     <div class="container nav-content">
-      <div class="brand">Clinton Joash</div>
+      <a class="logo" href="index.html">Clinton Joash</a>
       <div class="nav-links">
         <a href="#about">About</a>
-        <a href="#skills">Skills</a>
+        <a href="#expertise">Expertise</a>
         <a href="#experience">Experience</a>
         <a href="#projects">Projects</a>
-        <a href="#documentation">Documentation</a>
+        <a href="cv.html">CV</a>
         <a href="#contact">Contact</a>
       </div>
     </div>
@@ -455,369 +34,240 @@
       <div>
         <div class="eyebrow">IT Support | Service Desk | Systems Support</div>
         <h1>Clinton Joash</h1>
-        <h2>IT Technical Support Specialist</h2>
+        <h2>IT Technical Support Specialist with junior-to-mid L1/L2 support capability.</h2>
         <p>
-          I provide practical technical support, troubleshoot systems, support users,
-          document IT processes, and build web-based solutions using Python, Flask,
-          databases, and modern web technologies.
+          I support users, troubleshoot systems, document service desk processes, assist with Windows/Linux environments,
+          and build practical web-based technology solutions using Python Flask, databases, Git, and APIs.
         </p>
-
         <div class="hero-actions">
-          <a href="#projects" class="btn btn-primary">View Projects</a>
-          <a href="#contact" class="btn btn-outline">Contact Me</a>
-          <a href="https://github.com/ClintonJoash" class="btn btn-outline" target="_blank">GitHub Profile</a>
+          <a class="btn btn-primary" href="Clinton_Joash_Strategic_IT_CV.pdf" download>Download CV</a>
+          <a class="btn btn-outline" href="cv.html">View Online CV</a>
+          <a class="btn btn-outline" href="https://github.com/ClintonJoash" target="_blank" rel="noopener">GitHub</a>
         </div>
-
         <div class="badges">
           <span class="badge">Service Desk</span>
-          <span class="badge">Windows & Linux Support</span>
+          <span class="badge">Windows & Linux</span>
           <span class="badge">Networking</span>
           <span class="badge">ITSM Documentation</span>
           <span class="badge">Python Flask</span>
+          <span class="badge">Azure Fundamentals</span>
         </div>
       </div>
 
-      <div class="hero-card">
+      <aside class="profile-card">
+        <div class="profile-frame">
+          <img src="assets/profile-placeholder.svg" alt="Profile picture placeholder for Clinton Joash" />
+        </div>
         <h3>Professional Focus</h3>
         <ul>
-          <li>End-user technical support and troubleshooting</li>
-          <li>Service desk operations and escalation handling</li>
-          <li>Windows, Linux, networking, and endpoint support</li>
-          <li>IT documentation, SOPs, and support guides</li>
-          <li>Python Flask web applications and database projects</li>
+          <li>End-user support, troubleshooting, and incident handling</li>
+          <li>Service desk process documentation and escalation support</li>
+          <li>Networking fundamentals: TCP/IP, DNS, DHCP, LAN support</li>
+          <li>Systems support: Windows 10/11, Ubuntu/Linux, drivers, updates</li>
+          <li>Python Flask projects with database and API integration</li>
         </ul>
-      </div>
+      </aside>
     </div>
   </header>
 
-  <section id="about">
-    <div class="container">
-      <div class="section-title">
-        <span>About Me</span>
-        <h2>Practical IT support with strong documentation and technical problem-solving skills.</h2>
-        <p>
-          I am an IT Technical Support Specialist based in Nairobi, Kenya, with a Bachelor of Technology
-          in Computer Technology from The Technical University of Kenya.
-        </p>
-      </div>
+  <main>
+    <div class="container stats">
+      <div class="stat"><strong>B.Tech</strong><span>Computer Technology</span></div>
+      <div class="stat"><strong>L1/L2</strong><span>Support positioning</span></div>
+      <div class="stat"><strong>ITSM</strong><span>Documentation focus</span></div>
+      <div class="stat"><strong>Flask</strong><span>Project experience</span></div>
+    </div>
 
-      <div class="grid-2">
-        <div class="card">
-          <h3>What I Do</h3>
+    <section id="about">
+      <div class="container">
+        <div class="section-title">
+          <span class="label">About</span>
+          <h2>Support-focused, documentation-strong, and technically adaptable.</h2>
           <p>
-            I support users, resolve hardware and software issues, configure systems,
-            troubleshoot networks, assist with endpoint support, and prepare structured
-            IT documentation for workplace use.
+            I hold a Bachelor of Technology in Computer Technology from The Technical University of Kenya and have practical experience
+            across IT support, service desk operations, endpoint support, networking fundamentals, workplace documentation, and web application development.
           </p>
         </div>
-
-        <div class="card">
-          <h3>Career Direction</h3>
-          <p>
-            I am focused on growing in IT Support, Service Desk Operations, Systems Administration,
-            Cloud Support, Networking, Cybersecurity Awareness, and IT process improvement.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="skills">
-    <div class="container">
-      <div class="section-title">
-        <span>Core Skills</span>
-        <h2>Technical skills aligned with modern IT support environments.</h2>
-        <p>
-          My skill set combines support operations, systems troubleshooting, networking,
-          documentation, cybersecurity awareness, and practical web development.
-        </p>
-      </div>
-
-      <div class="grid-3">
-        <div class="card">
-          <h3>IT Support</h3>
-          <p>Service desk support, troubleshooting, user support, system maintenance, endpoint support, and incident handling.</p>
-          <div class="skills-list">
-            <span class="skill">Technical Support</span>
-            <span class="skill">Help Desk</span>
-            <span class="skill">Windows Support</span>
-            <span class="skill">Linux Support</span>
-            <span class="skill">Printers</span>
-            <span class="skill">User Support</span>
-          </div>
-        </div>
-
-        <div class="card">
-          <h3>Networking</h3>
-          <p>Basic network support, connectivity troubleshooting, IP addressing, DNS, DHCP, and LAN diagnostics.</p>
-          <div class="skills-list">
-            <span class="skill">TCP/IP</span>
-            <span class="skill">DNS</span>
-            <span class="skill">DHCP</span>
-            <span class="skill">LAN</span>
-            <span class="skill">Routers</span>
-            <span class="skill">Switches</span>
-          </div>
-        </div>
-
-        <div class="card">
-          <h3>ITSM & Documentation</h3>
-          <p>Structured IT documents, service desk procedures, escalation matrices, awareness guides, and SOPs.</p>
-          <div class="skills-list">
-            <span class="skill">ITSM</span>
-            <span class="skill">ITOM</span>
-            <span class="skill">SOPs</span>
-            <span class="skill">Escalation Matrix</span>
-            <span class="skill">Incident Reporting</span>
-          </div>
-        </div>
-
-        <div class="card">
-          <h3>Systems</h3>
-          <p>Operating system support, system configuration, software installation, updates, diagnostics, and maintenance.</p>
-          <div class="skills-list">
-            <span class="skill">Windows</span>
-            <span class="skill">Ubuntu</span>
-            <span class="skill">Drivers</span>
-            <span class="skill">BIOS/UEFI</span>
-            <span class="skill">System Tools</span>
-          </div>
-        </div>
-
-        <div class="card">
-          <h3>Development</h3>
-          <p>Practical web-based projects using Python Flask, databases, APIs, and front-end technologies.</p>
-          <div class="skills-list">
-            <span class="skill">Python</span>
-            <span class="skill">Flask</span>
-            <span class="skill">JavaScript</span>
-            <span class="skill">HTML</span>
-            <span class="skill">CSS</span>
-            <span class="skill">MySQL</span>
-            <span class="skill">SQLite</span>
-          </div>
-        </div>
-
-        <div class="card">
-          <h3>Security Awareness</h3>
-          <p>Awareness and documentation around phishing, passwords, MFA, data handling, and incident reporting.</p>
-          <div class="skills-list">
-            <span class="skill">MFA</span>
-            <span class="skill">Phishing</span>
-            <span class="skill">Data Protection</span>
-            <span class="skill">Access Control</span>
-            <span class="skill">Incident Reporting</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="experience">
-    <div class="container">
-      <div class="section-title">
-        <span>Experience</span>
-        <h2>Hands-on exposure in technical support, digital operations, and workplace IT documentation.</h2>
-      </div>
-
-      <div class="experience-item">
-        <h3>IT Technical Support Specialist</h3>
-        <div class="role-meta">Ripple-Pro / Riana Group</div>
-        <ul>
-          <li>Support users with hardware, software, network, email, printer, and endpoint-related issues.</li>
-          <li>Assist with service desk operations, troubleshooting, escalation, and user guidance.</li>
-          <li>Prepare IT support documentation, service desk guides, escalation matrices, and awareness materials.</li>
-          <li>Contribute to cybersecurity awareness through user-focused documentation and support practices.</li>
-        </ul>
-      </div>
-
-      <div class="experience-item">
-        <h3>ICT Officer / Technical Support & Digital Operations</h3>
-        <div class="role-meta">Didupa Agency</div>
-        <ul>
-          <li>Supported technical and digital operations across user support, reporting, and content coordination.</li>
-          <li>Assisted with troubleshooting, client communication, weekly reports, and operational updates.</li>
-          <li>Worked with digital platforms, performance insights, and day-to-day technical coordination.</li>
-        </ul>
-      </div>
-
-      <div class="experience-item">
-        <h3>ICT Support Attachment</h3>
-        <div class="role-meta">Kenya Ports Authority</div>
-        <ul>
-          <li>Supported computer troubleshooting, software installation, network connectivity, and printer setup.</li>
-          <li>Assisted users with Outlook support, password resets, antivirus support, and Windows updates.</li>
-          <li>Gained exposure to enterprise ICT operations, SAP ESS support, backups, and workstation maintenance.</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <section id="projects">
-    <div class="container">
-      <div class="section-title">
-        <span>Projects</span>
-        <h2>Practical technology projects showing problem-solving and implementation ability.</h2>
-      </div>
-
-      <div class="grid-2">
-        <div class="project-card">
-          <div class="project-header">
-            <h3>Nairobi Commuter Rail Web Application</h3>
-            <p>Python Flask | Database | M-Pesa API</p>
-          </div>
-          <div class="project-body">
+        <div class="grid-2">
+          <div class="card">
+            <h3>What I bring to IT support</h3>
             <p>
-              A web-based commuter rail booking system designed with user registration,
-              login, route selection, ticket booking, payment workflow, reporting, and M-Pesa integration.
+              Practical troubleshooting, user communication, structured escalation thinking, endpoint support, network diagnostics,
+              and the ability to document repeatable processes clearly for business users and IT teams.
             </p>
-            <div class="skills-list">
-              <span class="skill">Python</span>
-              <span class="skill">Flask</span>
-              <span class="skill">JavaScript</span>
-              <span class="skill">SQLite/MySQL</span>
-              <span class="skill">M-Pesa API</span>
-            </div>
           </div>
-        </div>
-
-        <div class="project-card">
-          <div class="project-header">
-            <h3>Kitabu Swap Platform</h3>
-            <p>Book Exchange Platform Concept</p>
-          </div>
-          <div class="project-body">
+          <div class="card">
+            <h3>Career direction</h3>
             <p>
-              A book exchange platform concept designed to help parents and students exchange
-              school books affordably through book submission, approval workflow, delivery coordination,
-              and WhatsApp-based support flow.
+              I am building toward Service Desk, Technical Support, Remote Support, Junior Systems Administration,
+              Cloud Support, Networking Support, and ITSM-driven operations roles.
             </p>
-            <div class="skills-list">
-              <span class="skill">Database Planning</span>
-              <span class="skill">Workflow Design</span>
-              <span class="skill">Operations</span>
-              <span class="skill">Platform Design</span>
-            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="documentation">
-    <div class="container">
-      <div class="section-title">
-        <span>Documentation Portfolio</span>
-        <h2>Professional IT documents prepared for support, operations, and user awareness.</h2>
-      </div>
-
-      <div class="grid-3">
-        <div class="card">
-          <h3>Service Desk Documents</h3>
-          <p>
-            Service desk service charter, escalation matrix, incident handling flow,
-            and user support documentation.
-          </p>
+    <section id="expertise">
+      <div class="container">
+        <div class="section-title">
+          <span class="label">Expertise</span>
+          <h2>A balanced technical support profile for modern business IT environments.</h2>
+          <p>My strongest value is the combination of support operations, systems troubleshooting, documentation, and development capability.</p>
         </div>
-
-        <div class="card">
-          <h3>ITSM / ITOM / ITIL Notes</h3>
-          <p>
-            One-page professional references covering service management,
-            operations management, and IT service best practices.
-          </p>
-        </div>
-
-        <div class="card">
-          <h3>System Deployment Guides</h3>
-          <p>
-            Network OS installation guide, PXE boot concepts, and minimal OS image
-            documentation for controlled deployment environments.
-          </p>
-        </div>
-
-        <div class="card">
-          <h3>Security Awareness Guides</h3>
-          <p>
-            User-focused guidance on phishing, password security, MFA, remote work,
-            data protection, and incident reporting.
-          </p>
-        </div>
-
-        <div class="card">
-          <h3>Business Continuity</h3>
-          <p>
-            IT and organizational continuity planning covering incident recovery,
-            critical systems, communication, and operational resilience.
-          </p>
-        </div>
-
-        <div class="card">
-          <h3>User Self-Service Guides</h3>
-          <p>
-            Practical guides for end users, including notification control,
-            secure behavior, support requests, and workplace technology use.
-          </p>
+        <div class="grid-3">
+          <div class="card">
+            <h3>Service Desk & User Support</h3>
+            <p>Incident triage, user guidance, troubleshooting, escalation support, remote-support readiness, and support communication.</p>
+            <div class="skill-list"><span class="skill">Help Desk</span><span class="skill">Incident Handling</span><span class="skill">Escalation</span><span class="skill">User Support</span></div>
+          </div>
+          <div class="card">
+            <h3>Systems & Endpoint Support</h3>
+            <p>Windows 10/11, Ubuntu/Linux, OS installation, drivers, BIOS/UEFI basics, updates, antivirus, and diagnostics.</p>
+            <div class="skill-list"><span class="skill">Windows</span><span class="skill">Ubuntu</span><span class="skill">Drivers</span><span class="skill">BIOS/UEFI</span></div>
+          </div>
+          <div class="card">
+            <h3>Networking Support</h3>
+            <p>TCP/IP, DNS, DHCP, LAN troubleshooting, Ethernet configuration, routers, switches, gateway issues, and diagnostics.</p>
+            <div class="skill-list"><span class="skill">TCP/IP</span><span class="skill">DNS</span><span class="skill">DHCP</span><span class="skill">LAN</span></div>
+          </div>
+          <div class="card">
+            <h3>ITSM & Documentation</h3>
+            <p>Service desk service charter, escalation matrix, SOPs, ITSM/ITOM/ITIL notes, user guides, and process documentation.</p>
+            <div class="skill-list"><span class="skill">ITSM</span><span class="skill">SOPs</span><span class="skill">ITOM</span><span class="skill">Service Charter</span></div>
+          </div>
+          <div class="card">
+            <h3>Cybersecurity Awareness</h3>
+            <p>Password security, MFA, phishing awareness, data protection, remote work security, incident reporting, and BCP documentation.</p>
+            <div class="skill-list"><span class="skill">MFA</span><span class="skill">Phishing</span><span class="skill">Data Protection</span><span class="skill">BCP</span></div>
+          </div>
+          <div class="card">
+            <h3>Development & Data</h3>
+            <p>Python Flask, JavaScript, HTML/CSS, PHP, MySQL, SQLite, PostgreSQL, Git/GitHub, Postman, and API integration.</p>
+            <div class="skill-list"><span class="skill">Python</span><span class="skill">Flask</span><span class="skill">MySQL</span><span class="skill">APIs</span></div>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="learning">
-    <div class="container">
-      <div class="section-title">
-        <span>Education & Learning</span>
-        <h2>Continuous learning in IT support, networking, systems, and cloud fundamentals.</h2>
-      </div>
-
-      <div class="grid-2">
-        <div class="card">
-          <h3>Education</h3>
-          <p>
-            Bachelor of Technology in Computer Technology<br />
-            The Technical University of Kenya
-          </p>
+    <section id="experience">
+      <div class="container">
+        <div class="section-title">
+          <span class="label">Experience</span>
+          <h2>Practical IT support, digital operations, and workplace technology exposure.</h2>
         </div>
-
-        <div class="card">
-          <h3>Certifications & Current Learning</h3>
-          <p>
-            Microsoft Azure Fundamentals, Google IT Support Professional Certificate,
-            Cisco Networking Basics, BrighterMonday Soft Skills, and BrighterMonday SkillMe Program.
-          </p>
+        <div class="timeline">
+          <article class="timeline-item">
+            <h3>IT Technical Support Specialist</h3>
+            <div class="meta">Ripple-Pro / Riana Group | 2026 - Present | Nairobi, Kenya</div>
+            <ul>
+              <li>Support users with hardware, software, networking, email, printer, and endpoint-related issues.</li>
+              <li>Assist with issue identification, troubleshooting, escalation guidance, and user communication.</li>
+              <li>Prepare professional IT documentation including service desk guides, escalation matrices, ITSM references, and security awareness material.</li>
+            </ul>
+          </article>
+          <article class="timeline-item">
+            <h3>ICT Officer - Technical Support & Digital Operations</h3>
+            <div class="meta">Didupa Agency | Dec 2024 - Oct 2025 | Nairobi, Kenya</div>
+            <ul>
+              <li>Provided technical support for users, applications, digital tools, reporting, and operational coordination.</li>
+              <li>Prepared weekly reports, meeting notes, performance insight summaries, and client-facing updates.</li>
+              <li>Combined troubleshooting, communication, documentation, and digital operations support.</li>
+            </ul>
+          </article>
+          <article class="timeline-item">
+            <h3>ICT Support Attachment</h3>
+            <div class="meta">Kenya Ports Authority | Jan 2024 - Jun 2024 | Mombasa, Kenya</div>
+            <ul>
+              <li>Supported computer troubleshooting, software installation, printer/scanner setup, Windows updates, and user assistance.</li>
+              <li>Assisted with Outlook issues, password resets, antivirus support, Ethernet/proxy settings, backups, and workstation maintenance.</li>
+              <li>Gained exposure to enterprise ICT operations, SAP ESS support, domain-related issues, and server room practices.</li>
+            </ul>
+          </article>
+          <article class="timeline-item">
+            <h3>ICT Support Attachment</h3>
+            <div class="meta">Tier Data Limited | Aug 2024 - Nov 2024 | Nairobi, Kenya</div>
+            <ul>
+              <li>Assisted with user support, device troubleshooting, system setup, and basic infrastructure-related support activities.</li>
+              <li>Built stronger practical experience in support communication, documentation, and structured troubleshooting.</li>
+            </ul>
+          </article>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="contact">
-    <div class="container">
-      <div class="contact-box">
+    <section id="projects">
+      <div class="container">
+        <div class="section-title">
+          <span class="label">Projects</span>
+          <h2>Projects that demonstrate technical execution and problem-solving.</h2>
+        </div>
+        <div class="grid-3">
+          <article class="card project">
+            <div class="project-head"><h3>Nairobi Commuter Rail Web Application</h3><span>Python Flask | Database | M-Pesa API</span></div>
+            <div class="project-body">
+              <p>Final-year web application with user registration, login, route booking, ticket workflow, reporting, and M-Pesa Daraja API integration.</p>
+              <div class="skill-list"><span class="skill">Python</span><span class="skill">Flask</span><span class="skill">JavaScript</span><span class="skill">SQLite/MySQL</span></div>
+            </div>
+          </article>
+          <article class="card project">
+            <div class="project-head"><h3>Kitabu Swap Platform</h3><span>Technical Lead | Platform Concept</span></div>
+            <div class="project-body">
+              <p>Book exchange platform concept covering database planning, book submission, approvals, image organization, WhatsApp flow, delivery coordination, and operations.</p>
+              <div class="skill-list"><span class="skill">Database Planning</span><span class="skill">Workflow</span><span class="skill">Operations</span></div>
+            </div>
+          </article>
+          <article class="card project">
+            <div class="project-head"><h3>IT Documentation Portfolio</h3><span>Service Desk | ITSM | Security Awareness</span></div>
+            <div class="project-body">
+              <p>Professional documents including service desk charter, escalation matrix, ITSM/ITOM/ITIL references, minimal OS image guide, network OS guide, BCP, and security awareness guides.</p>
+              <div class="skill-list"><span class="skill">ITSM</span><span class="skill">SOPs</span><span class="skill">BCP</span><span class="skill">Security</span></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="cv-panel">
+          <div>
+            <h2>Professional CV built for IT support and service desk applications.</h2>
+            <p>
+              The CV presents my qualifications, practical support experience, tools, projects, and documentation portfolio in a stronger junior-to-mid IT support profile.
+            </p>
+          </div>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="Clinton_Joash_Strategic_IT_CV.pdf" download>Download PDF</a>
+            <a class="btn btn-light" href="Clinton_Joash_Strategic_IT_CV.docx" download>Download DOCX</a>
+            <a class="btn btn-light" href="cv.html">View CV Page</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container contact-card">
         <div>
-          <h2>Let’s Connect</h2>
+          <h2>Let’s connect</h2>
           <p>
-            I am open to IT Support, Service Desk, Technical Support, Remote Support,
-            Junior Systems Administration, Networking Support, and Cloud Support opportunities.
+            I am open to IT Support, Service Desk, Technical Support, Remote Support, Junior Systems Administration,
+            Cloud Support, and Network Support opportunities.
           </p>
         </div>
-
-        <div class="contact-links">
+        <div class="contact-details">
           <p><strong>Email:</strong> <a href="mailto:clionyi08@gmail.com">clionyi08@gmail.com</a></p>
           <p><strong>Mobile:</strong> <a href="tel:+254704450646">+254 704 450 646</a></p>
-          <p><strong>WhatsApp:</strong> <a href="https://wa.me/254704450646" target="_blank">Message me on WhatsApp</a></p>
-          <p><strong>GitHub:</strong> <a href="https://github.com/ClintonJoash" target="_blank">github.com/ClintonJoash</a></p>
-          <p><strong>LinkedIn:</strong> Add your LinkedIn profile link here</p>
+          <p><strong>WhatsApp:</strong> <a href="https://wa.me/254704450646" target="_blank" rel="noopener">Message me on WhatsApp</a></p>
+          <p><strong>GitHub:</strong> <a href="https://github.com/ClintonJoash" target="_blank" rel="noopener">github.com/ClintonJoash</a></p>
+          <p><strong>LinkedIn:</strong> Add your LinkedIn URL here</p>
           <p><strong>Location:</strong> Nairobi, Kenya</p>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
   <footer>
-    <div class="container">
-      <p>&copy; 2026 Clinton Joash. IT Technical Support Specialist. All rights reserved.</p>
-    </div>
+    <div class="container">&copy; 2026 Clinton Joash. IT Technical Support Specialist. All rights reserved.</div>
   </footer>
-
 </body>
 </html>

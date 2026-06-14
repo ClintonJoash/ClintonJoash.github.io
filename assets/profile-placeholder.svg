@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="720" viewBox="0 0 720 720" role="img" aria-label="Profile photo placeholder for Clinton Joash">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0f172a"/>
+      <stop offset="0.48" stop-color="#1e3a8a"/>
+      <stop offset="1" stop-color="#2563eb"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="28" flood-color="#000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+  <rect width="720" height="720" rx="64" fill="url(#g)"/>
+  <circle cx="360" cy="285" r="118" fill="#dbeafe" opacity="0.95"/>
+  <path d="M160 610c22-110 100-173 200-173s178 63 200 173" fill="#dbeafe" opacity="0.95"/>
+  <circle cx="360" cy="360" r="296" fill="none" stroke="#93c5fd" stroke-width="10" opacity="0.45"/>
+  <text x="360" y="650" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="52" font-weight="700" fill="#ffffff">CLINTON JOASH</text>
+</svg>
