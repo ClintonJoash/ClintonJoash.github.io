@@ -55,9 +55,9 @@
       </div>
 
       <aside class="profile-card">
-        <div class="profile-photo-card">
-  <img src="assets/profile.png" alt="Clinton O. Joash" class="profile-photo">
-</div>
+        <div class="profile-frame">
+          <img src="assets/profile.png" alt="Profile picture placeholder for Clinton Joash" />
+        </div>
         <h3>Professional Focus</h3>
         <ul>
           <li>End-user support, troubleshooting, and incident handling</li>
@@ -67,8 +67,7 @@
           <li>Python Flask projects with database and API integration</li>
         </ul>
       </aside>
-    </div>
-  </header>
+    </div  </header>
 
   <main>
     <div class="container stats">
